@@ -1,4 +1,4 @@
-#iOS夯实：内存管理
+#iOS夯实：内存管理 
 
 > 最近的学习计划是将iOS的机制原理好好重新打磨学习一下,总结和加入自己的思考。
 > 
@@ -14,7 +14,7 @@
 
 
 ##基本信息
-###Objective-C 提供了两种内存管理方式。
+###Objective-C 提供了两种内存管理方式。  
 
 1. MRR （manual retain-release） 手动内存管理  
 	这是基于reference counting实现的,由NSObject与runtime environment共同工作实现。
@@ -79,7 +79,7 @@
 ***在dealloc的最后需要调用super class的dealloc***
 
 ##二.实践中的内存管理准则
-###1. 使用存取方法来简化内存管理。  
+###1. 使用存取方法来简化内存管理 
 	如果代码中都是一堆retain release，必然不是一个好的情况。在存取方法里面进行retain和release的操作能够简化内存管理。例如：
 	
 ~~~objective-c
